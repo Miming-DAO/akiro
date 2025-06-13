@@ -11,5 +11,12 @@ export interface Environment {
   apiUrl: string;
   appName: string;
   version: string;
+  // Social media links
+  socialMedia: {
+    twitter: string;
+    github: string;
+    linkedin: string;
+    youtube: string;
+  };
   // Add any other environment variables here
 } 
