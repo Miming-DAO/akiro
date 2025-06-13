@@ -46,3 +46,9 @@ Thumbs.db
 
 # Zyndly
 .todo/
+
+# Environment files
+.env
+
+# Keep environment templates
+!.env.example
