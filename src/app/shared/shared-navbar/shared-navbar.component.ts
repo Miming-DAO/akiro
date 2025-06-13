@@ -1,11 +1,36 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-shared-navbar',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule, RouterModule],
   templateUrl: './shared-navbar.component.html',
   styleUrl: './shared-navbar.component.css'
 })
-export class SharedNavbarComponent {
-
+export class SharedNavbarComponent implements OnInit {
+  title: string = 'Akiro Coin'; // Hard-coded default
+  
+  constructor() {
+    console.log('Navbar constructor - Original title:', this.title);
+    console.log('Navbar constructor - environment object:', environment);
+    
+    // Try to get the app name from environment if it exists
+    if (environment && environment.appName) {
+      this.title = environment.appName;
+      console.log('Navbar constructor - Updated title from env:', this.title);
+    }
+  }
+  
+  ngOnInit() {
+    console.log('Navbar ngOnInit - Original title:', this.title);
+    
+    // Try again in ngOnInit in case environment is loaded later
+    if (environment && environment.appName) {
+      this.title = environment.appName;
+      console.log('Navbar ngOnInit - Updated title from env:', this.title);
+    }
+  }
 }
