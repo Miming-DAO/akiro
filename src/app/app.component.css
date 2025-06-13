@@ -1,0 +1,22 @@
+/* Apply Tailwind's full height utilities */
+.min-h-screen {
+  min-height: 100vh;
+}
+
+/* Make sure the content area takes up remaining space */
+.flex-grow {
+  flex-grow: 1;
+}
+
+/* Add some basic padding to the main content area */
+main {
+  padding: 2rem 1rem;
+}
+
+/* Ensure consistent container behavior */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
