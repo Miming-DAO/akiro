@@ -1,1 +1,29 @@
-<p>shared-navbar works!</p>
+<nav class="bg-gray-800 text-white shadow-lg">
+  <div class="container mx-auto px-4 py-3">
+    <div class="flex justify-between items-center">
+      <!-- Logo/Brand -->
+      <div class="flex items-center">
+        <a routerLink="/" class="flex items-center">
+          <span class="text-xl font-bold text-yellow-400">{{ title || 'Default Title' }}</span>
+        </a>
+      </div>
+      
+      <!-- Nav Links -->
+      <div class="hidden md:flex space-x-8">
+        <a routerLink="/" class="hover:text-yellow-400 transition duration-300">Home</a>
+        <a routerLink="/market" class="hover:text-yellow-400 transition duration-300">Market</a>
+        <a routerLink="/wallet" class="hover:text-yellow-400 transition duration-300">Wallet</a>
+        <a routerLink="/about" class="hover:text-yellow-400 transition duration-300">About</a>
+      </div>
+      
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button class="text-white focus:outline-none">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
