@@ -1,59 +1,117 @@
-# AkiroCoin
+# Akiro Coin
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.5.
+Akiro Coin landing page made with Angular.
 
-## Development server
+## Technologies Used
 
-To start a local development server, run:
+- **Angular**: Version 19.1.0
+- **Angular Material**: Version 19.2.18
+- **TailwindCSS**: Version 3.4.1
+- **RxJS**: Version 7.8.0
+- **TypeScript**: Version 5.7.2
 
-```bash
-ng serve
-```
+## Development Environment Setup
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Prerequisites
 
-## Code scaffolding
+- Node.js (v16.x or higher recommended)
+- npm (v8.x or higher recommended)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Installation
 
-```bash
-ng generate component component-name
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/akiro-coin.git
+   cd akiro-coin
+   ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-```bash
-ng generate --help
-```
+## Running the Application
 
-## Building
+This application supports multiple environments (development, test, and production).
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### Standard Development Server
 
 ```bash
-ng test
+npm start
 ```
 
-## Running end-to-end tests
+This will start the application on `http://localhost:4200/`.
 
-For end-to-end (e2e) testing, run:
+### Environment-Specific Servers
+
+The application can be run with specific environment configurations:
 
 ```bash
-ng e2e
+# Run with development environment
+npm run start:dev
+
+# Run with test environment
+npm run start:test
+
+# Run with production environment
+npm run start:prod
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+### Switching Environments
 
-## Additional Resources
+You can also switch the active environment without restarting the server:
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```bash
+# Switch to development environment
+npm run env:dev
+
+# Switch to test environment
+npm run env:test
+
+# Switch to production environment
+npm run env:prod
+```
+
+## Building for Production
+
+To build the application for different environments:
+
+```bash
+# Build for development
+npm run build:dev
+
+# Build for test
+npm run build:test
+
+# Build for production
+npm run build:prod
+```
+
+Build artifacts will be stored in the `dist/` directory.
+
+## Environment Configuration System
+
+Akiro Coin uses a flexible environment configuration system. For detailed information about how environments are configured and managed, please refer to [ENV_DOCS.md](ENV_DOCS.md).
+
+## Running Tests
+
+### Unit Tests
+
+```bash
+npm test
+```
+
+This executes the unit tests via [Karma](https://karma-runner.github.io).
+
+## Project Structure
+
+- `src/app/shared`: Contains shared components like navbar and footer
+- `src/environments`: Contains environment-specific configuration files
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'type: Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
