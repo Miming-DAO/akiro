@@ -11,4 +11,11 @@ export const environment: Environment = {
   apiUrl: 'http://localhost:8000/api',
   appName: 'Akiro Coin',
   version: '1.0.0',
+  // Social media links
+  socialMedia: {
+    twitter: 'https://twitter.com/akirocoin',
+    github: 'https://github.com/akirocoin',
+    linkedin: 'https://linkedin.com/company/akirocoin',
+    youtube: 'https://youtube.com/akirocoin'
+  }
 }; 
