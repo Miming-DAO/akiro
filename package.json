@@ -4,9 +4,18 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:dev": "node switch-env.js development && ng serve --configuration=development",
+    "start:test": "node switch-env.js test && ng serve --configuration=test",
+    "start:prod": "node switch-env.js production && ng serve --configuration=production",
     "build": "ng build",
+    "build:dev": "node switch-env.js development && ng build --configuration=development",
+    "build:test": "node switch-env.js test && ng build --configuration=test",
+    "build:prod": "node switch-env.js production && ng build --configuration=production",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "env:dev": "node switch-env.js development",
+    "env:test": "node switch-env.js test",
+    "env:prod": "node switch-env.js production"
   },
   "private": true,
   "dependencies": {
