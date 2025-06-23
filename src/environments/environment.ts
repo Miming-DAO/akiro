@@ -9,7 +9,7 @@ export const environment: Environment = {
   development: true,
   // Add your common configuration here
   apiUrl: 'http://localhost:8000/api',
-  appName: 'Akiro Coin',
+  appName: 'Akiro  ($AKR)',
   version: '1.0.0',
   // Social media links
   socialMedia: {

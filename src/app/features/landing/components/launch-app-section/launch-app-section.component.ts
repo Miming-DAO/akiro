@@ -7,7 +7,7 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterModule],
   template: `
-    <section class="relative min-h-screen flex items-center bg-cover bg-center bg-no-repeat w-screen bg-gray-900">
+    <section id="launch-app" class="relative min-h-screen flex items-center bg-cover bg-center bg-no-repeat w-screen bg-gray-900">
     </section>
   `,
   styles: [

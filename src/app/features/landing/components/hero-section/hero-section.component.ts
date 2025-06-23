@@ -7,7 +7,7 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterModule],
   template: `
-    <section class="relative min-h-screen flex items-center bg-cover bg-center bg-no-repeat w-screen" 
+    <section id="/" class="relative min-h-screen flex items-center bg-cover bg-center bg-no-repeat w-screen" 
              style="background-image: url('assets/images/hero-bg.png');">
     </section>
   `,

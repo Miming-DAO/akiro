@@ -11,7 +11,7 @@ import { environment } from '../../../environments/environment';
   styleUrl: './shared-navbar.component.css'
 })
 export class SharedNavbarComponent implements OnInit {
-  title: string = 'Akiro Coin'; // Hard-coded default
+  title: string = 'Akiro ($AKR)'; // Hard-coded default
   
   constructor() {
     console.log('Navbar constructor - Original title:', this.title);

@@ -1,24 +1,26 @@
-<nav class="bg-gray-800 text-white shadow-lg">
+<nav class="fixed top-0 left-0 w-full z-50 bg-black/60 text-[#f1d4a6] shadow-lg">
   <div class="container mx-auto px-4 py-3">
     <div class="flex justify-between items-center">
       <!-- Logo/Brand -->
       <div class="flex items-center">
-        <a routerLink="/" class="flex items-center">
-          <span class="text-xl font-bold text-yellow-400">{{ title || 'Default Title' }}</span>
+        <a href="#" class="flex items-center font-bold text-[#f1d4a6] text-2xl">
+          <img src="/assets/images/akiro-coin-logo.png" alt="Akiro Coin Logo" class="h-12 w-12 md:h-16 md:w-16 mr-4 rounded-full object-contain bg-transparent" />
+          <span>{{ title || 'Default Title' }}</span>
         </a>
       </div>
       
       <!-- Nav Links -->
       <div class="hidden md:flex space-x-8">
-        <a routerLink="/" class="hover:text-yellow-400 transition duration-300">Home</a>
-        <a routerLink="/market" class="hover:text-yellow-400 transition duration-300">Market</a>
-        <a routerLink="/wallet" class="hover:text-yellow-400 transition duration-300">Wallet</a>
-        <a routerLink="/about" class="hover:text-yellow-400 transition duration-300">About</a>
+        <a href="#about" class="hover:text-white transition duration-300 text-[#f1d4a6] text-xl">About</a>
+        <a href="#utility" class="hover:text-white transition duration-300 text-[#f1d4a6] text-xl">Utility</a>
+        <a href="#tokenomics" class="hover:text-white transition duration-300 text-[#f1d4a6] text-xl">Tokenomics</a>
+        <a href="#timeline" class="hover:text-white transition duration-300 text-[#f1d4a6] text-xl">Timeline</a>
+        <a href="#launch-app" class="hover:text-white transition duration-300 text-[#f1d4a6] text-xl">Launch App</a>
       </div>
       
       <!-- Mobile Menu Button -->
       <div class="md:hidden">
-        <button class="text-white focus:outline-none">
+        <button class="text-[#f1d4a6] focus:outline-none">
           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
           </svg>

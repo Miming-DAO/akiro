@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   template: `
-    <section class="relative min-h-screen flex items-center bg-cover bg-center bg-no-repeat w-screen"
+    <section id="utility" class="relative min-h-screen flex items-center bg-cover bg-center bg-no-repeat w-screen"
              style="background-image: url('assets/images/utility-bg.png');">
     </section>
   `,
