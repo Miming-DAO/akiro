@@ -12,7 +12,7 @@ import { environment } from '../../../environments/environment';
 })
 export class SharedFooterComponent implements OnInit {
   currentYear = new Date().getFullYear();
-  appName: string = 'Akiro Coin'; // Hard-coded default
+  appName: string = 'Akiro ($AKR)'; // Hard-coded default
   socialLinks = {
     twitter: 'https://twitter.com/akirocoin',
     github: 'https://github.com/akirocoin',

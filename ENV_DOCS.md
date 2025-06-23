@@ -1,6 +1,6 @@
-# Environment Configuration System for Akiro Coin
+# Environment Configuration System for Akiro ($AKR)
 
-This document explains how the environment configuration system works in the Akiro Coin project.
+This document explains how the environment configuration system works in the Akiro ($AKR) project.
 
 ## Overview
 

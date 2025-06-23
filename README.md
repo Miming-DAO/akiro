@@ -1,6 +1,6 @@
-# Akiro Coin
+# Akiro ($AKR)
 
-Akiro Coin landing page made with Angular.
+Akiro ($AKR) landing page made with Angular.
 
 Colors
 #f1d4a6 - text
@@ -94,7 +94,7 @@ Build artifacts will be stored in the `dist/` directory.
 
 ## Environment Configuration System
 
-Akiro Coin uses a flexible environment configuration system. For detailed information about how environments are configured and managed, please refer to [ENV_DOCS.md](ENV_DOCS.md).
+Akiro ($AKR) uses a flexible environment configuration system. For detailed information about how environments are configured and managed, please refer to [ENV_DOCS.md](ENV_DOCS.md).
 
 ## Running Tests
 
