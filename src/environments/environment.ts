@@ -13,9 +13,12 @@ export const environment: Environment = {
   version: '1.0.0',
   // Social media links
   socialMedia: {
+    x: 'https://twitter.com/akirocoin',
     twitter: 'https://twitter.com/akirocoin',
     github: 'https://github.com/akirocoin',
     linkedin: 'https://linkedin.com/company/akirocoin',
-    youtube: 'https://youtube.com/akirocoin'
+    youtube: 'https://youtube.com/akirocoin',
+    dexscreener: '',
+    telegram: ''
   }
 }; 

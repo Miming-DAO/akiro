@@ -13,9 +13,12 @@ export interface Environment {
   version: string;
   // Social media links
   socialMedia: {
+    x: string;
     twitter: string;
     github: string;
     linkedin: string;
+    dexscreener: string;
+    telegram: string;
     youtube: string;
   };
   // Add any other environment variables here
