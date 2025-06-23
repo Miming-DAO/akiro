@@ -2,6 +2,9 @@
 
 Akiro Coin landing page made with Angular.
 
+Colors
+#f1d4a6 - text
+#497cab (transparent 74%)- cards
 ## Technologies Used
 
 - **Angular**: Version 19.1.0
