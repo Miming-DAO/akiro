@@ -5,7 +5,7 @@ import { AboutSectionComponent } from '../../components/about-section/about-sect
 import { UtilitySectionComponent } from '../../components/utility-section/utility-section.component';
 import { TokenomicsSectionComponent } from '../../components/tokenomics-section/tokenomics-section.component';
 import { TimelineSectionComponent } from '../../components/timeline-section/timeline-section.component';
-import { LaunchAppSectionComponent } from '../../components/launch-app-section/launch-app-section.component';
+/* import { LaunchAppSectionComponent } from '../../components/launch-app-section/launch-app-section.component'; */
 
 @Component({
   selector: 'app-landing-page',
@@ -17,7 +17,7 @@ import { LaunchAppSectionComponent } from '../../components/launch-app-section/l
     UtilitySectionComponent,
     TokenomicsSectionComponent,
     TimelineSectionComponent,
-    LaunchAppSectionComponent
+  /*   LaunchAppSectionComponent */
   ],
   template: `
     <div class="w-screen overflow-hidden">
@@ -26,7 +26,7 @@ import { LaunchAppSectionComponent } from '../../components/launch-app-section/l
       <app-utility-section></app-utility-section>
       <app-tokenomics-section></app-tokenomics-section>
       <app-timeline-section></app-timeline-section>
-      <app-launch-app-section></app-launch-app-section>
+      <!-- <app-launch-app-section></app-launch-app-section> -->
     </div>
   `,
   styles: [`
