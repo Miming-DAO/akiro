@@ -12,7 +12,8 @@ import { environment } from '../../../environments/environment';
 })
 export class SharedNavbarComponent implements OnInit {
   title: string = 'Akiro ($AKR)'; // Hard-coded default
-  
+  mobileMenuOpen = false;
+
   constructor() {
     console.log('Navbar constructor - Original title:', this.title);
     console.log('Navbar constructor - environment object:', environment);
@@ -32,5 +33,13 @@ export class SharedNavbarComponent implements OnInit {
       this.title = environment.appName;
       console.log('Navbar ngOnInit - Updated title from env:', this.title);
     }
+  }
+
+  toggleMobileMenu() {
+    this.mobileMenuOpen = !this.mobileMenuOpen;
+  }
+
+  closeMobileMenu() {
+    this.mobileMenuOpen = false;
   }
 }
