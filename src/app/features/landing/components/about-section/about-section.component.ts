@@ -6,10 +6,11 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   template: `
-    <section id="about" class="relative min-h-screen flex items-center bg-cover bg-center bg-no-repeat w-screen"
+    <section id="about" class="relative w-full py-12 md:py-20 pb-12 md:pb-20 mb-16 md:mb-16 flex items-center bg-cover bg-center bg-no-repeat min-h-screen lg:min-h-screen lg:w-screen"
              style="background-image: url('/assets/images/about-bg.png');">
-      <div class="absolute inset-0 flex items-center justify-center">
-        <div class="relative bg-[#497cab]/80 border border-white/40 rounded-2xl shadow-xl p-8 md:p-12 w-[95vw] max-w-5xl text-white backdrop-blur-md">
+      <div class="flex items-center justify-center w-full px-2 md:px-8 lg:absolute lg:inset-0 lg:flex lg:items-center lg:justify-center">
+        <div class="relative bg-[#497cab]/80 border border-white/40 rounded-2xl shadow-xl p-6 md:p-12 w-full max-w-5xl text-white backdrop-blur-md mt-10 mb-10
+                    lg:p-8 lg:mt-0 lg:mb-0 lg:w-[95vw] lg:max-w-5xl">
           <!-- Social Icons Top Right -->
           <div class="absolute top-6 right-8 flex gap-6">
             <a href="https://twitter.com/" target="_blank" rel="noopener">
@@ -26,7 +27,7 @@ import { CommonModule } from '@angular/common';
             </a>
           </div>
           <!-- Logo and Title -->
-          <div class="flex items-center gap-6 mb-4">
+          <div class="flex flex-col md:flex-row items-center gap-6 mb-4 mt-16 md:mt-0 lg:flex-row lg:items-center lg:gap-6 lg:mb-4 lg:mt-0">
             <img src="/assets/images/akiro-coin-logo.png" alt="Akiro Coin Logo" class="h-16 w-16 rounded-full object-contain bg-white/20" />
             <span class="text-3xl md:text-4xl font-bold text-[#FFD700]">About Akiro ($AKR)</span>
           </div>
@@ -59,8 +60,9 @@ import { CommonModule } from '@angular/common';
   `,
   styles: [
     `:host { display: block; width: 100vw; max-width: 100%; overflow-x: hidden; margin: 0; padding: 0; }
-     section { margin: 0; padding: 0; width: 100vw; max-width: 100%; background-attachment: fixed; background-size: cover; background-position: center; overflow: hidden; box-sizing: border-box; min-height: 100vh; @media (max-width: 768px) { background-attachment: scroll; } }
+     section { margin: 0; padding: 0; width: 100vw; max-width: 100%; background-attachment: fixed; background-size: cover; background-position: center; overflow: hidden; box-sizing: border-box; min-height: 100vh; }
+     @media (max-width: 768px) { section { background-attachment: scroll; } }
      :host ::ng-deep * { box-sizing: border-box; }`
   ]
 })
-export class AboutSectionComponent {} 
+export class AboutSectionComponent {}
