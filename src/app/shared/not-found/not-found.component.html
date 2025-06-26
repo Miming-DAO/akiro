@@ -1,0 +1,27 @@
+<section class="not-found-hero">
+  <div class="not-found-content">
+    <img src="/assets/images/akiro-coin-logo.png" alt="Akiro Coin Logo" class="coin-logo" />
+    <h1 class="not-found-title">404: Block Not Found</h1>
+    <p class="not-found-message">
+      Oops! Looks like this block is missing from the chain.<br />
+      Maybe it got lost in a hard fork or is chilling in a cold wallet.<br />
+      But don’t worry, your assets are SAFU!
+    </p>
+    <div class="solana-section">
+      <img src="/assets/images/solana-logo.png" alt="Solana Logo" class="solana-logo" />
+      <div class="contract-info">
+        <span class="contract-label">Solana Contract Address:</span>
+        <span class="contract-address">8dv3udbCdEUXGFXB2m7Hs7y5T9Jthe1V7LpZ28k7tgs7</span>
+        <button
+          (click)="copyAddress()"
+          class="copy-btn"
+          [attr.aria-label]="copied ? 'Copied!' : 'Copy address'"
+        >
+          <span *ngIf="!copied">Copy Address</span>
+          <span *ngIf="copied">Copied!</span>
+        </button>
+      </div>
+    </div>
+    <button class="home-btn" (click)="goHome()">Back to Home</button>
+  </div>
+</section>
