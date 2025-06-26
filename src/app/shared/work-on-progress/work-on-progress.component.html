@@ -1,1 +1,27 @@
-<p>work-on-progress works!</p>
+<section class="not-found-hero">
+  <div class="not-found-content">
+    <img src="/assets/images/akiro-coin-logo.png" alt="Akiro Coin Logo" class="coin-logo" />
+    <h1 class="not-found-title">🚧 Work in Progress 🚧</h1>
+    <p class="not-found-message">
+      This feature is still being mined and validated on the blockchain.<br />
+      Our devs are working proof-of-work overtime!<br />
+      Check back soon for more crypto magic.
+    </p>
+    <div class="solana-section">
+      <img src="/assets/images/solana-logo.png" alt="Solana Logo" class="solana-logo" />
+      <div class="contract-info">
+        <span class="contract-label">Solana Contract Address:</span>
+        <span class="contract-address">8dv3udbCdEUXGFXB2m7Hs7y5T9Jthe1V7LpZ28k7tgs7</span>
+        <button
+          (click)="copyAddress()"
+          class="copy-btn"
+          [attr.aria-label]="copied ? 'Copied!' : 'Copy address'"
+        >
+          <span *ngIf="!copied">Copy Address</span>
+          <span *ngIf="copied">Copied!</span>
+        </button>
+      </div>
+    </div>
+    <button class="home-btn" (click)="goHome()">Back to Home</button>
+  </div>
+</section>
