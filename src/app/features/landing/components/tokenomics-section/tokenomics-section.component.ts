@@ -6,8 +6,8 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   template: `
-    <section id="tokenomics" class="relative min-h-screen flex items-center bg-[#6d88a3] w-screen">
-      <div class="container mx-auto px-2 py-4 flex flex-col md:flex-row items-center justify-center max-w-[1800px]">
+    <section id="tokenomics" class="relative w-full py-12 md:py-20 pb-12 md:pb-20 mb-8 md:mb-16 flex items-center bg-[#6d88a3]">
+      <div class="container mx-auto px-2 md:px-8 py-4 flex flex-col md:flex-row items-center justify-center max-w-[1800px]">
         <!-- Left: Info Box -->
         <div class="rounded-xl p-8 md:p-10 flex-1 max-w-lg flex flex-col justify-between ">
           <div>
@@ -35,15 +35,15 @@ import { CommonModule } from '@angular/common';
           </div>
         </div>
         <!-- Right: Pie Chart -->
-        <div class="flex-1 flex items-center justify-center relative max-w-5xl w-full min-h-[1100px]">
-          <img src="/assets/images/tokenomics-pie-chart.svg" alt="Tokenomics Pie Chart" class="w-[1100px] h-[1100px] max-w-full transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-[0_0_60px_10px_rgba(255,215,0,0.25)] rounded-full" />
+        <div class="flex-1 flex items-center justify-center relative max-w-5xl w-full min-h-[400px] md:min-h-[1100px]">
+          <img src="/assets/images/tokenomics-pie-chart.svg" alt="Tokenomics Pie Chart" class="w-full max-w-[400px] md:w-[1100px] md:h-[1100px] transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-[0_0_60px_10px_rgba(255,215,0,0.25)]" />
         </div>
       </div>
     </section>
   `,
   styles: [
     `:host { display: block; width: 100vw; max-width: 100%; overflow-x: hidden; }
-     section { margin: 0; padding: 0; width: 100vw; max-width: 100%; min-height: 100vh; background-attachment: fixed; background-size: cover; background-position: center; overflow-x: hidden; }
+     section { margin: 0; padding: 0; width: 100vw; max-width: 100%; min-height: unset; background-attachment: fixed; background-size: cover; background-position: center; overflow-x: hidden; }
      .container { max-width: 1200px; }
      @media (max-width: 768px) {
        section { background-attachment: scroll; }
