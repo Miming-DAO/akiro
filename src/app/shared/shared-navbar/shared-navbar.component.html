@@ -9,7 +9,7 @@
         </a>
       </div>
       
-      <!-- Nav Links -->
+      <!-- Nav Links Desktop -->
       <div class="hidden md:flex space-x-8">
         <a href="#about" class="hover:text-white transition duration-300 text-[#f1d4a6] text-xl">About</a>
         <a href="#utility" class="hover:text-white transition duration-300 text-[#f1d4a6] text-xl">Utility</a>
@@ -20,12 +20,21 @@
       
       <!-- Mobile Menu Button -->
       <div class="md:hidden">
-        <button class="text-[#f1d4a6] focus:outline-none">
+        <button class="text-[#f1d4a6] focus:outline-none" (click)="toggleMobileMenu()" aria-label="Open menu">
           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
           </svg>
         </button>
       </div>
+    </div>
+    
+    <!-- Mobile Nav Links -->
+    <div *ngIf="mobileMenuOpen" class="md:hidden mt-4 bg-black/90 rounded-lg shadow-lg p-4 flex flex-col space-y-4 animate-fade-in">
+      <a href="#about" (click)="closeMobileMenu()" class="hover:text-white transition duration-300 text-[#f1d4a6] text-lg">About</a>
+      <a href="#utility" (click)="closeMobileMenu()" class="hover:text-white transition duration-300 text-[#f1d4a6] text-lg">Utility</a>
+      <a href="#tokenomics" (click)="closeMobileMenu()" class="hover:text-white transition duration-300 text-[#f1d4a6] text-lg">Tokenomics</a>
+      <a href="#timeline" (click)="closeMobileMenu()" class="hover:text-white transition duration-300 text-[#f1d4a6] text-lg">Timeline</a>
+      <a href="#launch-app" (click)="closeMobileMenu()" class="hover:text-white transition duration-300 text-[#f1d4a6] text-lg">Launch App</a>
     </div>
   </div>
 </nav>
