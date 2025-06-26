@@ -1,0 +1,135 @@
+/* Work in Progress page styles (same as custom 404) */
+.not-found-hero {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url('/assets/images/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.not-found-content {
+  background: rgba(73, 124, 171, 0.8);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  padding: 2rem 1.5rem;
+  max-width: 95vw;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  color: #f1d4a6;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  backdrop-filter: blur(8px);
+}
+
+.coin-logo {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  object-fit: contain;
+  background: rgba(255,255,255,0.2);
+  margin: 0 auto 0.5rem auto;
+}
+
+.not-found-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #FFD700;
+  margin-bottom: 0.5rem;
+}
+
+.not-found-message {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.solana-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.solana-logo {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  object-fit: contain;
+  background: rgba(255,255,255,0.2);
+}
+
+.contract-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+.contract-label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #FFD700;
+}
+.contract-address {
+  font-size: 0.95rem;
+  word-break: break-all;
+  opacity: 0.9;
+}
+.copy-btn {
+  margin-top: 0.3rem;
+  background: #f1d4a6;
+  color: #497cab;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.4rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.copy-btn:hover {
+  background: #ffd700;
+}
+
+.home-btn {
+  margin-top: 1.2rem;
+  background: #FFD700;
+  color: #497cab;
+  padding: 0.7rem 2.2rem;
+  border-radius: 0.7rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+}
+.home-btn:hover {
+  background: #f1d4a6;
+}
+
+@media (max-width: 768px) {
+  .not-found-content {
+    max-width: 98vw;
+    padding: 1.2rem 0.5rem;
+    gap: 1rem;
+  }
+  .not-found-title {
+    font-size: 1.3rem;
+  }
+  .coin-logo, .solana-logo {
+    height: 56px;
+    width: 56px;
+  }
+  .home-btn {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
