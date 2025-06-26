@@ -10,5 +10,7 @@ import { RouterModule } from '@angular/router';
   styleUrl: './shared-footer.component.css'
 })
 export class SharedFooterComponent {
-  // Component properties can be added here as needed
+  currentYear = new Date().getFullYear();
+  akiroName = 'Akiro ($AKR)';
+  akiroLogo = '/assets/images/akiro-coin-logo.png';
 }
