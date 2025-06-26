@@ -6,10 +6,11 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   template: `
-    <section id="timeline" class="relative min-h-screen flex items-center bg-cover bg-center bg-no-repeat w-screen"
+    <section id="timeline" class="relative w-full py-12 md:py-20 pb-12 md:pb-20 mb-8 md:mb-16 flex items-center bg-cover bg-center bg-no-repeat min-h-screen lg:min-h-screen lg:w-screen"
              style="background-image: url('assets/images/timeline-bg.png');">
       <!-- Right-side overlay -->
-      <div class="absolute right-0 top-0 h-full w-full md:w-1/2 bg-[#7a521f] bg-opacity-90 z-10 flex items-center justify-center">
+      <div class="w-full md:w-1/2 bg-[#7a521f] bg-opacity-90 z-10 flex items-center justify-center mx-auto
+                  lg:absolute lg:right-0 lg:top-0 lg:h-full lg:w-1/2">
         <div class="items-center justify-center p-8 md:p-10 max-w-lg w-full">
           <div class="flex items-center justify-between mb-4">
             <span class="text-2xl md:text-3xl font-bold text-white">Timeline</span>
@@ -56,7 +57,8 @@ import { CommonModule } from '@angular/common';
   `,
   styles: [
     `:host { display: block; width: 100vw; max-width: 100%; overflow-x: hidden; }
-     section { margin: 0; padding: 0; width: 100vw; max-width: 100%; background-attachment: fixed; background-size: cover; background-position: center; overflow-x: hidden; min-height: 100vh; @media (max-width: 768px) { background-attachment: scroll; } }`
+     section { margin: 0; padding: 0; width: 100vw; max-width: 100%; background-attachment: fixed; background-size: cover; background-position: center; overflow-x: hidden; min-height: 100vh; }
+     @media (max-width: 768px) { section { background-attachment: scroll; } }`
   ]
 })
 export class TimelineSectionComponent {}
