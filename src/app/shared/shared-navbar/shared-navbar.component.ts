@@ -39,6 +39,15 @@ export class SharedNavbarComponent implements OnInit {
     this.mobileMenuOpen = !this.mobileMenuOpen;
   }
 
+  scrollToSection(event: Event, sectionId: string) {
+    event.preventDefault();
+    const el = document.getElementById(sectionId);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+      this.closeMobileMenu(); // Optionally close mobile menu after scroll
+    }
+  }
+
   closeMobileMenu() {
     this.mobileMenuOpen = false;
   }
