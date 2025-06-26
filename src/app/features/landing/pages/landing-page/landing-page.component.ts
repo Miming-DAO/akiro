@@ -20,7 +20,7 @@ import { TimelineSectionComponent } from '../../components/timeline-section/time
   /*   LaunchAppSectionComponent */
   ],
   template: `
-    <div class="w-screen overflow-hidden">
+    <div class="w-full max-w-full overflow-x-hidden">
       <app-hero-section></app-hero-section>
       <app-about-section></app-about-section>
       <app-utility-section></app-utility-section>
@@ -35,6 +35,7 @@ import { TimelineSectionComponent } from '../../components/timeline-section/time
       width: 100vw;
       max-width: 100%;
       overflow-x: hidden;
+      background: #0a192f;
     }
 
     :host ::ng-deep section {
@@ -42,9 +43,9 @@ import { TimelineSectionComponent } from '../../components/timeline-section/time
       max-width: 100%;
       margin: 0 !important;
       padding: 0 !important;
-      overflow-x: hidden;
+      overflow-x: visible;
       box-sizing: border-box;
     }
   `]
 })
-export class LandingPageComponent {} 
+export class LandingPageComponent {}
